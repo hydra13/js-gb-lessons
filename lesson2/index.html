@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+    <script src="js/task4.js"></script>
+    <script src="js/task5.js"></script>
+    <script src="js/task6.js"></script>
+    <script src="js/task7.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Домашнее задание к уроку 2</h1>
+        <h3>Made by Robert Sabirov (aka Hydra13)</h3>
+        <p>
+            1. Почему код дает именно такие результаты?
+        </p>
+        <img src="img/1.png" alt="codePic1">
+        <span class="test" onclick="testTask1();">Проверить</span>
+        <a class="btn" href="js/task1.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            2. Чему будет равен x?
+        </p>
+        <img src="img/2.png" alt="codePic1">
+        <span class="test" onclick="testTask2();">Проверить</span>
+        <a class="btn" href="js/task2.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            3. Объявить две целочисленные переменные — a и b и задать им произвольные
+            начальные значения. Затем написать скрипт, который работает по следующему
+            принципу:<br>
+            - если a и b <b>положительные</b>, вывести их <b>разность</b>;<br>
+            - если а и b <b>отрицательные</b>, вывести их <b>произведение</b>;<br>
+            - если а и b <b>разных знаков</b>, вывести их <b>сумму</b>;<br>
+            Ноль можно считать положительным числом.
+        </p>
+        <span class="test" onclick="testTask3();">Проверить</span>
+        <a class="btn" href="js/task3.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            4. Реализовать четыре основные арифметические операции в виде функций с двумя
+            параметрами. Обязательно использовать оператор <b>return</b>.
+        </p>
+        <span class="test" onclick="testTask4();">Проверить</span>
+        <a class="btn" href="js/task4.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            5. Реализовать функцию с тремя параметрами: function <b>mathOperation(arg1, arg2,operation)</b>,
+            где <b>arg1</b>, <b>arg2</b> — значения аргументов, <b>operation</b> — строка с
+            названием операции. В зависимости от переданного значения выполнить одну из
+            арифметических операций (использовать функции из пункта 4 и вернуть полученное
+            значение (применить <b>switch</b>).
+        </p>
+        <span class="test" onclick="testTask5();">Проверить</span>
+        <a class="btn" href="js/task5.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            6*. С помощью рекурсии организовать функцию возведения числа в степень. Формат:
+            <b>function power(val, pow)</b>, где <b>val</b> — заданное число, <b>pow</b> –— степень.
+        </p>
+        <span class="test" onclick="testTask6();">Проверить</span>
+        <a class="btn" href="js/task6.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            7*. Написать функцию для проверки пароля. На вход должен подаваться аргумент path
+            – строка с паролем. Требования к паролю:<br>
+        </p>
+        <ul>
+            <li>длина должна быть не меньше 3-х символов и не больше 12;</li>
+            <li>пароль должен содержать хотя бы один из следующих символов: &, $, %, *;</li>
+            <li>пароль должен либо начинаться с буквы ‘q’, либо заканчиваться буквой ‘z’, либо оба условия сразу.</li>
+        </ul>
+
+        <p>
+            На выходе функция должна возвращать строку «Корректный пароль» в том случае,
+            если пароль удовлетворяет всем условиям, и строку «Некорректный пароль» в том
+            случае, если пароль не удовлетворяет условиям.<br>
+            Для реализации проверки условий необходимо использовать следующие
+            встроенные инструменты:<br>
+        </p>
+        <ul>
+            <li><a href="https://javascript.ru/string/length" target="_blank">свойство length</a></li>
+            <li><a href="https://javascript.ru/string/indexof" target="_blank">функцию indexOf</a></li>
+            <li><a href="http://javascript.ru/string/lastindexof" target="_blank">функцию lastIndexOf</a></li>
+            <li>составные проверки с применением логического «и» / «или»</li>
+        </ul>
+        <p>
+            P.S. Функция проверки пароля может содержать в себе дополнительные
+            подфункции, постарайтесь выделить отдельные логические блоки внутри функции и
+            вынести их в отдельно.
+        </p>
+        <span class="test" onclick="testTask7();">Проверить</span>
+        <a class="btn" href="js/task7.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+    </div>
+</body>
+
+</html>

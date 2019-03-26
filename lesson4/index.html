@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- game -->
+    <script src="js/game/mover.js"></script>
+    <script src="js/game/player.js"></script>
+    <script src="js/game/config.js"></script>
+    <script src="js/game/renderer.js"></script>
+    <script src="js/game/code.js"></script>
+
+    <!-- store -->
+    <script src="js/store/product.js"></script>
+    <script src="js/store/pricelist.js"></script>
+    <script src="js/store/basket.js"></script>
+
+    <!-- tests -->
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+
+    <!-- millioner -->
+    <script src="js/millioner/questions.js"></script>
+    <script src="js/millioner/millioner-game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Домашнее задание к уроку 4</h1>
+        <h3>Made by Robert Sabirov (aka Hydra13)</h3>
+        <p>
+            1. Написать функцию, преобразующую число в объект. Передавая на вход число от 0
+            до 999, надо получить на выходе объект, в котором в соответствующих свойствах
+            описаны единицы, десятки и сотни. Например, для числа 245 надо получить
+            следующий объект: <b>{‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}</b>. Если число превышает
+            999, необходимо выдать соответствующее сообщение с помощью <b>console.log</b> и
+            вернуть пустой объект.
+        </p>
+        <span class="test" onclick="testTask1();">Проверить</span>
+        <a class="btn" href="js/task1.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            2. Продолжить работу с интернет-магазином, а именно, перенести функционал
+            подсчета корзины на объектно-ориентированную базу:<br>
+            • создать объект Basket с полем goodList и методами countTotalPrice,
+            countTotalNumber и putProduct (методы должны считать общую стоимость того,
+            что в goodList, общее количество того, что в goodList и добавлять товар в
+            корзину)<br>
+            • создать массив товаров с полями name и price<br>
+            • после этого пройтись по нему в цикле и положить в корзину по одному
+            товару на четной позиции и по 2 товара на нечетной позиции<br>
+            • внутри корзины в массиве goodList у каждого товара должно быть поле
+            count – количество товаров этого вида в корзине (например, 5 красных шаров)<br>
+            • вывести общую стоимость корзины и общее количество товаров в корзине
+        </p>
+        <span class="test" onclick="testTask2();">Проверить</span>
+        <a class="btn" href="js/task2.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <a class="btn" href="js/store/product.js" target="_blank" rel="noopener noreferrer">класс Product</a>
+        <a class="btn" href="js/store/basket.js" target="_blank" rel="noopener noreferrer">класс Basket</a>
+        <a class="btn" href="js/store/pricelist.js" target="_blank" rel="noopener noreferrer">массив priceList и методы
+            его наполнения</a>
+        <p>
+            3. *Доработать консольную бродилку, написанную на уроке, следующим
+            функционалом:<br>
+            • возможность ходить по диагонали с помощью клавиш 1, 3, 7 и 9<br>
+            • добавить проверку на выход игрока за пределы поля.
+        </p>
+        <span class="test" onclick="testTask3();">Проверить</span>
+        <a class="btn" href="js/task3.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <a class="btn" href="js/game/player.js" target="_blank" rel="noopener noreferrer">изменения в Player.js</a>
+        <a class="btn" href="js/game/mover.js" target="_blank" rel="noopener noreferrer">изменения в Mover.js</a>
+
+        <p>
+            4. *Игра "Кто хочет стать миллионером"
+        </p>
+        <span class="test" onclick="millionerGame.run();">Проверить</span>
+        <a class="btn" href="js/millioner/millioner-game.js" target="_blank" rel="noopener noreferrer">Открыть исходный
+            код</a>
+    </div>
+</body>
+
+</html>

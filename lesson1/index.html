@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Домашнее задание к уроку 1</h1>
+        <h3>Made by Robert Sabirov (aka Hydra13)</h3>
+        <p>
+            1. Задать температуру в градусах по Цельсию. Вывести в alert
+            соответствующую температуру в градусах по Фаренгейту.
+            Подсказка: расчёт идёт по формуле:
+            Tf&nbsp;=&nbsp;(9&nbsp;/&nbsp;5)&nbsp;*&nbsp;Tc&nbsp;+&nbsp;32, где Tf – температура по Фаренгейту, Tc –
+            температура по
+            Цельсию
+        </p>
+        <span class="test" onclick="testTask1();">Проверить</span>
+        <a href="js/task1.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            2. Объявить две переменные: admin и name. Записать в name строку
+            "Василий". Скопировать значение из name в admin. Вывести в консоль
+            переменную admin (должно вывести "Василий").
+
+        </p>
+        <span class="test" onclick="testTask2();">Проверить</span>
+        <a href="js/task2.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            3. Вывести в консоль значения выражений и объяснить почему получились
+            такие значения используя комментарии к каждому выражению:<br>
+            10 + 10 + "10"<br>
+            10 + "10" + 10<br>
+            10 + 10 + +"10"<br>
+            10 / -""<br>
+            10 / +"2,5"
+        </p>
+        <span class="test" onclick="testTask3();">Проверить</span>
+        <a href="js/task3.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            4. Напишите, являются ли данные имена переменных корректными:<br>
+            let mode = "normal";<br>
+            let my_valu3 = 102;<br>
+            let 3my_value3 = "102";<br>
+            let __hello__ = "world";<br>
+            let $$$ = "money";<br>
+            let !0_world = true;
+        </p>
+        <p class="result">
+            <span class="result-header">Решение:</span><br>
+            <b>let mode = "normal";</b> - является <b>корректным</b><br><br>
+
+            <b>let my_valu3 = 102;</b> - является <b>корректным</b>, но лучше использовать CamelCase - myValu3 и, в
+            данном
+            случае, использовать полное наименование (либо myValue3, либо myValue)<br><br>
+
+            <b>let 3my_value3 = "102";</b> - является <b>некорректным</b>, т.к. название переменных не может начинаться
+            с
+            цифр<br><br>
+
+            <b>let __hello__ = "world";</b> - является <b>корректным</b>, т.к. в JavaScript позволяется наименование
+            переменных начинать со знаков нижнего подчеркивания и доллара, но в данном случае лучше использовать просто
+            hello в качестве имени переменной<br><br>
+
+            <b>let $$$ = "money";</b> - является <b>корректным</b>, т.к. в JavaScript позволяется наименование
+            переменных начинать со знаков нижнего подчеркивания и доллара, но в данном случае лучше в качестве
+            наименования переменной использовать значение, которое будет отображать суть переменной<br><br>
+            <b>let !0_world = true;</b> - является <b>некорректным</b>, т.к. название переменных не может
+            начинаться со
+            специальных символов (исключение - <b>_</b> и <b>$</b>)
+        </p>
+    </div>
+
+</body>
+
+</html>

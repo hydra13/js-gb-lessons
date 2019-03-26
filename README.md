@@ -1,2 +1,3 @@
 # js-gb-lessons
-GeekBrains JavaScript homeworks
+---------------
+GeekBrains JavaScript Homeworks
