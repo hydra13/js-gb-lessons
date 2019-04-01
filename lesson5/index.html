@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- game -->
+    <script src="js/game/mover.js"></script>
+    <script src="js/game/player.js"></script>
+    <script src="js/game/config.js"></script>
+    <script src="js/game/renderer.js"></script>
+    <script src="js/game/code.js"></script>
+
+    <!-- store -->
+    <script src="js/store/product.js"></script>
+    <script src="js/store/pricelist.js"></script>
+    <script src="js/store/basket.js"></script>
+    <script src="js/store/renderBasket.js"></script>
+
+    <!-- tests -->
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Домашнее задание к уроку 5</h1>
+        <h3>Made by Robert Sabirov (aka Hydra13)</h3>
+        <p>
+            1. Создать функцию, генерирующую шахматную доску. Можно использовать любые
+            html-теги. Доска должна быть верно разлинована на черные и белые ячейки. Строки
+            должны нумероваться числами от 1 до 8, столбцы — латинскими буквами A, B, C, D,
+            E, F, G, H.
+        </p>
+        <span class="test" onclick="testTask1();">Проверить</span>
+        <div class="chess-board hidden"></div>
+        <a class="btn" href="js/task1.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <p>
+            2. Сделать генерацию корзины динамической: верстка корзины не должна находиться
+            в HTML-структуре. Там должен быть только <b>div</b>, в который будет вставляться
+            корзина, сгенерированная на базе JS:<br>
+            a. Пустая корзина должна выводить строку «Корзина пуста»;<br>
+            b. Наполненная должна выводить «В корзине: <b>n</b> товаров на сумму <b>m</b> рублей».
+
+        </p>
+        <span class="test" onclick="testTask2();">Проверить</span>
+        <a class="btn" href="js/task2.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <div class="product-list"></div>
+        <div class="basket"></div>
+
+        <a class="btn" href="js/store/renderBasket.js" target="_blank" rel="noopener noreferrer">класс RenderBasket</a>
+        <a class="btn" href="js/store/product.js" target="_blank" rel="noopener noreferrer">класс Product</a>
+        <a class="btn" href="js/store/basket.js" target="_blank" rel="noopener noreferrer">класс Basket</a>
+        <a class="btn" href="js/store/pricelist.js" target="_blank" rel="noopener noreferrer">массив priceList и методы
+            его наполнения</a>
+
+        <p>P.S.: еще пока не успел доделать, сдал то, что есть. В последующем доделаю</p>
+        <!-- <p>
+            3. * Добавить в бродилку препятствия – клетки, через которые игрок не может
+            перешагнуть. Подсказка – отметить препятствия можно с помощью кастомных
+            атрибутов data-…
+        </p>
+        <span class="test" onclick="testTask3();">Проверить</span>
+        <a class="btn" href="js/task3.js" target="_blank" rel="noopener noreferrer">Открыть исходный код</a>
+        <a class="btn" href="js/game/player.js" target="_blank" rel="noopener noreferrer">изменения в Player.js</a>
+        <a class="btn" href="js/game/mover.js" target="_blank" rel="noopener noreferrer">изменения в Mover.js</a> -->
+    </div>
+</body>
+
+</html>
