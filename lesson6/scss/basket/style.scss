@@ -1,0 +1,48 @@
+@import 'fonts';
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Cool jazz', sans-serif;
+    padding: 5px;
+}
+
+.key {
+    min-height: 30px;
+    background-color: #777;
+    color: #ededed;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: #888;
+    }
+
+    &:active {
+        background-color: #666;
+    }
+
+    &-back {
+        min-width: 100%;
+    }
+
+    &-source {
+        margin: 5px 20% 5px 20%;
+        min-width: 300px;
+    }
+}
+
+.header {
+    min-width: 100%;
+    text-align: center;
+    font-weight: bold;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+@import 'price-list';
+@import 'basket';

@@ -1,0 +1,92 @@
+/* basket */
+
+
+.basket {
+    min-width: 585px;
+    max-width: 585px;
+    height: 400px;
+    background-color: #ededed;
+    padding: 10px;
+
+    &-add-btn {
+        display: block;
+        height: 30px;
+        margin: 0 0 5px 0;
+        border-radius: 4px;
+        border: 2px solid #404040;
+        background-color: #ededed;
+        color: #404040;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #777;
+            color: #ededed;
+        }
+
+        &:active {
+            background-color: #999;
+            color: #ededed;
+        }
+    }
+
+    &-goods-list {
+        min-width: 585px;
+        max-width: 585px;
+        height: 320px;
+        background-color: #777;
+        margin: 0 0 5px 0;
+        overflow: scroll;
+
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            min-height: 24px;
+            line-height: 24px;
+            border: 1px solid #4e4e4e;
+            background-color: #5e5e5e;
+
+            &-txt {
+                background-color: #5e5e5e;
+                color: #ededed;
+                min-height: 24px;
+                line-height: 24px;
+                font-size: 16px;
+                padding: 0;
+                border: 1px solid #4e4e4e;
+            }
+
+            &-del-btn {
+                background-color: #ededed;
+                color: #4e4e4e;
+                /* height: 24px; */
+                /* width: 24px; */
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0 5px 0 5px;
+                /* font-family: 'Arial', sans-serif; */
+                font-weight: bold;
+                text-align: center;
+                border: 2px solid #4e4e4e;
+                border-radius: 4px;
+
+                &:hover {
+                    /* border: 2px solid #ededed; */
+                    /* color: #ededed; */
+                    background-color: #bbb;
+                }
+            }
+        }
+    }
+
+    &-total {
+        display: block;
+        height: 30px;
+        color: #404040;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}

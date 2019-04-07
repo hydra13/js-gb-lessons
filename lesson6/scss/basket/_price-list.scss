@@ -1,0 +1,121 @@
+/* product-list */
+
+.price-list {
+    min-width: 585px;
+    max-width: 585px;
+    height: 400px;
+    background-color: #ededed;
+    padding: 10px;
+
+    &-items {
+        min-width: 585px;
+        max-width: 585px;
+        height: 100%;
+        background-color: #777;
+        margin: 0 0 5px 0;
+        overflow: scroll;
+
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            min-height: 24px;
+            line-height: 24px;
+            border: 1px solid #4e4e4e;
+            background-color: #5e5e5e;
+
+            &-txt {
+                background-color: #5e5e5e;
+                color: #ededed;
+                min-height: 24px;
+                line-height: 24px;
+                font-size: 16px;
+                padding: 0;
+                border: 1px solid #4e4e4e;
+            }
+
+            &-add-btn {
+                background-color: #ededed;
+                color: #4e4e4e;
+                /* height: 24px; */
+                /* width: 24px; */
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0 5px 0 5px;
+                /* font-family: 'Arial', sans-serif; */
+                font-weight: bold;
+                text-align: center;
+                border: 2px solid #4e4e4e;
+                border-radius: 4px;
+
+                &:hover {
+                    /* border: 2px solid #ededed; */
+                    /* color: #ededed; */
+                    background-color: #bbb;
+                }
+
+                &:active {
+                    background-color: #aaa;
+                }
+            }
+        }
+    }
+}
+
+// .product {
+//     min-width: 33%;
+//     max-width: 100%;
+//     background-color: #445162;
+
+//     @media all and (max-width: 1100px) {
+//         & {
+//             justify-content: center;
+//         }
+//     }
+
+//     &-desc {
+//         margin: 0;
+//     }
+
+//     &-image {
+//         background-color: #ffffff;
+//         max-width: 100%;
+//         width: 469px;
+//         height: 214px;
+//         margin: 0;
+//     }
+
+//     &-name {
+//         font-family: Arial;
+//         color: #ffffff;
+//         font-size: 60px;
+//         font-weight: 400;
+//         text-transform: capitalize;
+//     }
+
+//     &-solutions {
+//         font-family: Arial;
+//         color: #ffffff;
+//         font-size: 20px;
+//         font-weight: 400;
+//         line-height: 36px;
+//         list-style-type: none;
+//         padding: 0px;
+//         margin: 30px 0 0 30px;
+
+//         &_item {
+//             position: relative;
+
+//             &::before {
+//                 content: "";
+//                 background-image: url(/img/check-icon.png);
+//                 background-size: cover;
+//                 width: 25px;
+//                 height: 20px;
+//                 display: block;
+//                 position: absolute;
+//                 top: 7px;
+//                 left: -30px;
+//             }
+//         }
+//     }
+// }

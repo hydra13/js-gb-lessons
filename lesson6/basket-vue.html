@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин Vue</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <script src="./js/vue.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <a class="key key-back" href="index.html">Вернуться на начальную страницу</a>
+        <span class="header">Прайс-лист</span>
+        <div class="price-list">
+            <div class="price-list-items">
+                <price-list v-for="item in priceListItems" v-bind:item="item" v-bind:key="item.name"
+                    @addproduct="addToBasket">
+                </price-list>
+            </div>
+        </div>
+        <span class="header">Корзина</span>
+        <div class="basket">
+            <span class="basket-add-btn" @click="addRandomGood">Добавить случ. товар</span>
+            <div class="basket-goods-list">
+                <basket v-for="item in goodsListItems" v-bind:item="item" v-bind:key="item.name"
+                    @remove="removeFromBasket">
+                </basket>
+            </div>
+            <div class="basket-total">{{ message }}</div>
+        </div>
+        <span class="header">Исходные коды</span>
+        <a class="key key-source" href="./js/store-vue/priceListElement.js" target="_blank">priceListElement.js(Vue)</a>
+        <a class="key key-source" href="./js/store-vue/basketElement.js" target="_blank">basketElement.js(Vue)</a>
+        <a class="key key-source" href="./js/store/product.js" target="_blank">product.js</a>
+        <a class="key key-source" href="./js/store/pricelist.js" target="_blank">pricelist.js</a>
+        <a class="key key-source" href="./js/store/basket.js" target="_blank">basket.js</a>
+        <a class="key key-source" href="./js/store-vue/runner.js" target="_blank">runner.js</a>
+    </div>
+
+    <script src="js/store/product.js"></script>
+    <script src="js/store/pricelist.js"></script>
+    <script src="js/store/basket.js"></script>
+    <script src="js/store-vue/runner.js"></script>
+    <script src="js/store-vue/priceListElement.js"></script>
+    <script src="js/store-vue/basketElement.js"></script>
+</body>
+
+</html>

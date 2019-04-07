@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Monotype Corsiva Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monotype Corsiva Regular'), url('../fonts/MTCORSVA.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cool jazz';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cool jazz'), url('../fonts/Cooljazz.woff') format('woff');
+}
+
+body {
+    /* font-family: 'Monotype Corsiva Regular', sans-serif; */
+    font-family: 'Cool jazz', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 28px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+ul {
+    font-size: 24px;
+}
+
+img {
+    margin-bottom: 15px;
+}
+
+.test,
+.btn {
+    display: block;
+    font-size: 24px;
+    min-width: 150px;
+    min-height: 30px;
+    border-radius: 50px;
+    background-color: #404040;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px;
+}
+
+.test:hover,
+.btn:hover {
+    background-color: #777;
+}
+
+.test:active,
+.btn:active {
+    background-color: #555;
+}
+
+.btn {
+    text-decoration: none;
+    min-width: 300px;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result-header {
+    font-weight: 600;
+}
+
+.chess-board {
+    background-color: #777;
+    max-width: 585px;
+    max-height: 585px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chess-board.hidden {
+    display: none;
+    max-height: 0px;
+}
+
+.black-cell {
+    width: 65px;
+    height: 65px;
+    background-color: #505050;
+}
+
+.white-cell {
+    width: 65px;
+    height: 65px;
+    background-color: #ededed;
+}
+
+.header-symbol {
+    display: block;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    color: #ededed;
+    background-color: transparent;
+    line-height: 65px;
+}
+
+.splitter {
+    min-width: 100%;
+    height: 1px;
+    background-color: #777;
+}

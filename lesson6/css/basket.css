@@ -1,0 +1,166 @@
+/* fonts */
+@font-face {
+  font-family: 'Monotype Corsiva Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monotype Corsiva Regular"), url("../fonts/MTCORSVA.woff") format("woff"); }
+@font-face {
+  font-family: 'Cool jazz';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cool jazz"), url("../fonts/Cooljazz.woff") format("woff"); }
+.container {
+  margin: auto;
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Cool jazz', sans-serif;
+  padding: 5px; }
+
+.key {
+  min-height: 30px;
+  background-color: #777;
+  color: #ededed;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px; }
+  .key:hover {
+    background-color: #888; }
+  .key:active {
+    background-color: #666; }
+  .key-back {
+    min-width: 100%; }
+  .key-source {
+    margin: 5px 20% 5px 20%;
+    min-width: 300px; }
+
+.header {
+  min-width: 100%;
+  text-align: center;
+  font-weight: bold;
+  min-height: 30px;
+  line-height: 30px; }
+
+/* product-list */
+.price-list {
+  min-width: 585px;
+  max-width: 585px;
+  height: 400px;
+  background-color: #ededed;
+  padding: 10px; }
+  .price-list-items {
+    min-width: 585px;
+    max-width: 585px;
+    height: 100%;
+    background-color: #777;
+    margin: 0 0 5px 0;
+    overflow: scroll; }
+    .price-list-items_item {
+      display: flex;
+      justify-content: space-between;
+      min-height: 24px;
+      line-height: 24px;
+      border: 1px solid #4e4e4e;
+      background-color: #5e5e5e; }
+      .price-list-items_item-txt {
+        background-color: #5e5e5e;
+        color: #ededed;
+        min-height: 24px;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0;
+        border: 1px solid #4e4e4e; }
+      .price-list-items_item-add-btn {
+        background-color: #ededed;
+        color: #4e4e4e;
+        /* height: 24px; */
+        /* width: 24px; */
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 5px 0 5px;
+        /* font-family: 'Arial', sans-serif; */
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #4e4e4e;
+        border-radius: 4px; }
+        .price-list-items_item-add-btn:hover {
+          /* border: 2px solid #ededed; */
+          /* color: #ededed; */
+          background-color: #bbb; }
+        .price-list-items_item-add-btn:active {
+          background-color: #aaa; }
+
+/* basket */
+.basket {
+  min-width: 585px;
+  max-width: 585px;
+  height: 400px;
+  background-color: #ededed;
+  padding: 10px; }
+  .basket-add-btn {
+    display: block;
+    height: 30px;
+    margin: 0 0 5px 0;
+    border-radius: 4px;
+    border: 2px solid #404040;
+    background-color: #ededed;
+    color: #404040;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px; }
+    .basket-add-btn:hover {
+      background-color: #777;
+      color: #ededed; }
+    .basket-add-btn:active {
+      background-color: #999;
+      color: #ededed; }
+  .basket-goods-list {
+    min-width: 585px;
+    max-width: 585px;
+    height: 320px;
+    background-color: #777;
+    margin: 0 0 5px 0;
+    overflow: scroll; }
+    .basket-goods-list_item {
+      display: flex;
+      justify-content: space-between;
+      min-height: 24px;
+      line-height: 24px;
+      border: 1px solid #4e4e4e;
+      background-color: #5e5e5e; }
+      .basket-goods-list_item-txt {
+        background-color: #5e5e5e;
+        color: #ededed;
+        min-height: 24px;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0;
+        border: 1px solid #4e4e4e; }
+      .basket-goods-list_item-del-btn {
+        background-color: #ededed;
+        color: #4e4e4e;
+        /* height: 24px; */
+        /* width: 24px; */
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 5px 0 5px;
+        /* font-family: 'Arial', sans-serif; */
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #4e4e4e;
+        border-radius: 4px; }
+        .basket-goods-list_item-del-btn:hover {
+          /* border: 2px solid #ededed; */
+          /* color: #ededed; */
+          background-color: #bbb; }
+  .basket-total {
+    display: block;
+    height: 30px;
+    color: #404040;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold; }
+
+/*# sourceMappingURL=basket.css.map */

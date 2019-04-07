@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <div class="column is-6 is-offset-3">
+        <a class="button is-link is-rounded is-fullwidth" href="index.html" rel="noopener noreferrer">Вернуться на
+            начальную
+            страницу</a>
+        <div class="content">
+            <h1 class="has-text-centered">Форма</h1>
+            <p>
+                2. * Создать форму в html со следующими полями:
+            </p>
+            <ul>
+                <li>Логин - текстовое поле</li>
+                <li>Пароль - поле типа password</li>
+                <li>Повтор пароля - поле типа password</li>
+                <li>Кнопка отправить форму</li>
+            </ul>
+            <p>
+                Необходимо реализовать валидацию этой формы по следующим правилам:
+            </p>
+            <ul>
+                <li>Логин - должно содержать как минимум 1 символ, не более 50 символов.</li>
+                <li>Пароль - минимум 5 символов, максимум 50.</li>
+                <li>Повтор пароля - значение должно совпадать с полем пароль.</li>
+                <li>
+                    Кнопка отправить форму - при нажатии на кнопку форма должна провериться, при
+                    прохождении проверки, форма отправляется, если проверка не была пройдена, то:
+                    <ul>
+                        <li>Каждое поле, которое не прошло проверку должно выделяться красным
+                            цветом.</li>
+                        <li>Под каждым полем, что не прошло проверку, должна писаться подсказка по
+                            какой причине проверка провалилась.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Пользоваться аттрибутами HTML5 запрещено, необходимо реализовать проверки с
+                помощью javascript. Можно пользоваться сторонними стилевыми библиотеками (bulma, bootstrap).
+            </p>
+            <div class="has-text-centered">
+                <a class="button is-warning is-rounded" href="js/form/source.js" target="_blank"
+                    rel="noopener noreferrer">Посмотреть JS</a>
+            </div>
+            <h2 class="has-text-centered">Результат</h2>
+            <p class="has-text-centered">
+                Попробовал использовать Bulma
+            </p>
+        </div>
+
+
+
+        <form action="" class="column is-8 is-offset-2" onsubmit="return validate()">
+            <div class="field is-horisontal">
+                <label class="label">Логин</label>
+                <div class="control has-icons-left">
+                    <!-- <input class="input is-success" type="text" placeholder="Text input" value="bulma"> -->
+                    <input class="input field-login" type="text" placeholder="Имя пользователя" value="">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+                <p class="help is-danger login-error-msg is-hidden">Логин должен содержать как минимум 1 символ, не
+                    более 50
+                    символов</p>
+            </div>
+            <div class="field">
+                <label class="label">Пароль</label>
+                <p class="control has-icons-left">
+                    <input class="input field-pass" type="password" placeholder="Пароль">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+                <p class="help is-danger pass-error-msg is-hidden">Пароль должен содержать как минимум 5 символов, не
+                    более 50
+                    символов</p>
+            </div>
+            <div class="field">
+                <label class="label">Повтор пароля</label>
+                <p class="control has-icons-left">
+                    <input class="input field-pass-confirm" type="password" placeholder="Повтор пароля">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+                <p class="help is-danger pass-confirm-error-msg is-hidden">Пароли не совпадают</p>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button class="button is-success is-fullwidth" type="submit">
+                        Войти
+                    </button>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <script src=" js/form/source.js"> </script>
+</body>
+
+</html>
